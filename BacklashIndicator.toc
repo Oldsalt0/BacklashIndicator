@@ -1,0 +1,7 @@
+## Interface: 20400
+## Title: BacklashIndicator
+## Author: Oldsalt (Smolderforge)
+## Notes: Simple add-on to highlight Backlash procs
+## DefaultState: disabled
+## SavedVariables: savedBacklashSettings
+BacklashIndicator.lua
