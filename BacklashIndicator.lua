@@ -1,4 +1,6 @@
-﻿if select(2, UnitClass("player")) ~= "WARLOCK" then
+﻿-- BacklashIndicator (TBC)
+
+if select(2, UnitClass("player")) ~= "WARLOCK" then
 	return
 end
 
@@ -91,7 +93,7 @@ BacklashUpdateFrame:SetScript("OnUpdate", function(self, event, arg1)
 	for i=1,40 do
 		if select(1, UnitBuff("player", i)) ~= nil then
 			local spellName, _, _, _, _, spellDur = UnitBuff("player", i)
-			if spellName == "Backlash" then
+			if spellName == GetSpellInfo(34936) then
 				BacklashTexture:Show()
 				BacklashFont:SetText(spellDur - spellDur % 0.1)
 				backlashCheck = 1
